@@ -186,10 +186,6 @@ header {
         font-size: 9em;
     }
 
-    .get-started-button {
-        padding: 20px 40px;
-        transform: translate(10%, -120%);
-    }
 
     .sec {
         padding: 40px;
