@@ -13,7 +13,9 @@ body {
     overflow-x: hidden;
 }
 
-
+li {
+    list-style: none;
+}
 header {
     position: absolute;
     top: 0;
@@ -33,6 +35,15 @@ header {
     margin-right: 50px;
 }
 
+.navigation {
+    width: 100%;
+    height: 30px;
+    max-width: 1200px;
+    margin: 0 ;
+    display: flex;
+    align-items: center;
+}
+
 .navigation a {
     text-decoration: none;
     color:  #916F6F;
@@ -47,6 +58,7 @@ header {
     background: #916F6F;
     color: white;
 }
+
 
 .parallax {
     position: relative;
@@ -111,15 +123,119 @@ header {
     font-weight: 300;
 }
 
+.toggle-btn {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    position: relative; /* Add relative positioning to the toggle button */
+}
+
+.bar {
+    width: 25px;
+    height: 3px;
+    background-color: #916F6F;
+    margin: 5px 0;
+
+}
+
+.dropdown-menu.open a {
+    text-decoration: none;
+    color:  #fff;
+    padding: 6px 15px;
+    border-radius: 20px;
+    margin: 0 20px;
+    font-weight: 600;
+}
+
+.dropdown-menu.open a:hover, 
+.dropdown-menu.open a.active {
+    background: #916F6F;
+    color: white;
+}
+
+.dropdown-menu li {
+    padding: 0.7rem;
+    display: block; /* Display each option as a block element */
+    text-align: center; /* Center the text */
+}
+
+.dropdown-menu li:not(:last-child) {
+    margin-bottom: 8px; /* Adjust the vertical gap between options */
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    right: 50%;
+    transform: translateX(50%);
+    top: 70px; /* Adjust this value to control the vertical position */
+    height: 0;
+    background: rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(15px);
+    border-radius: 10px;
+    overflow: hidden;
+    transition: height .2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+
+.dropdown-menu.open {
+    height: 200px;
+    width: 420px; /* Adjust the width as needed */
+
+}
+
+.dropdown-menu.open li {
+    display: block;
+    text-align: center;
+    padding: 10px 0; /* Adjust padding for better spacing */
+}
+
+.dropdown-menu.open li:not(:last-child) {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2); /* Add a bottom border for separation */
+}
+
+.dropdown-menu.open a {
+    text-decoration: none;
+    color: #fff;
+    display: block;
+    padding: 10px 20px;
+    font-weight: 600;
+    width: 250%; /* Ensure the anchor takes full width within the flex container */
+}
+
+.dropdown-menu.open a:hover, .dropdown-menu.open a.active {
+    background: #916F6F;
+    color: white;
+}
+
+
 /* Media Query for smaller screens */
-@media screen and (max-width: 799px) {
+@media screen and (max-width: 600px) {
     header {
         padding: 15px;
-        padding-bottom: 500px;
+    }
+
+    body {
+        overflow-x: hidden;
     }
 
     .logo {
         margin-right: 20px;
+    }
+
+    .navigation {
+        display: none; 
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .toggle-btn {
+        display: flex;
+    }
+
+    .dropdown-menu {
+        display: flex;
     }
 
     .navigation a {
@@ -128,20 +244,23 @@ header {
     }
 
     .parallax {
-        height: 90vh;
-        justify-content:safe;
-
+        height: 65vh;
+        justify-content: safe;
+        overflow: hidden;
     }
     
     .parallax img {
-        width: 200%;
+        width: 250%;
     }
 
     #text {
-        position:absolute;
-        margin-top:400px;
-        font-size: 6em;
-        
+        position: absolute;
+        font-size: 4em;
+        top: 60px;
+        left: 10px;
+        color: #241C1C;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+        margin-top: 30vh;
     }
 
     .get-started-button {
@@ -158,8 +277,7 @@ header {
     }
 }
 
-/* Media Query for medium screens */
-@media screen and (min-width: 800px) and (max-width: 1599px) {
+@media screen and (min-width: 601px) and (max-width: 1799px) {
     header {
         padding: 20px;
     }
@@ -168,24 +286,38 @@ header {
         margin-right: 20px;
     }
 
+
+
     .navigation a {
         padding: 8px 12px;
         margin: 0 12px;
     }
 
     .parallax {
-        height: 130vh;
+        height: 130vh; /* Adjusted height for better visibility */
         background: #241C1C;
+        overflow: hidden; /* Added overflow to prevent horizontal scroll */
     }
 
     .parallax img {
         width: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
     }
 
     #text {
-        font-size: 9em;
+        position: absolute;
+        top: 120px;
+        font-size: 9em; /* Adjusted font size */
+        margin-bottom: 600px; /* Adjusted margin for better positioning */
+        color: #241C1C; /* Ensured text is visible against the dark background */
     }
 
+    .get-started-button {
+        padding: 10px 20px;
+        transform: translate(-50%, -50%);
+    }
 
     .sec {
         padding: 40px;

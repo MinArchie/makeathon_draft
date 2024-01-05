@@ -5,9 +5,47 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha384-d5uMBra0dI0eWkxyv2j/YfdCbNvH4uRlUs8VXEeNfJAjiqEeMGO9tU1bF4iS8B1" crossorigin="anonymous">
+
 </head>
 <body>
     <header>
+        <h2 class="logo">Logo</h2>
+        <nav class="navigation">
+            <a href="#" class="active">Home</a>
+            <a href="about.html">About Me</a>
+            <a href="education.html">Education & Experience</a>
+            <a href="interests.html">Interests</a>
+        </nav>
+
+        <div class="toggle-btn">&#9776;</div>
+
+        <div class="dropdown-menu">
+            <li>
+                <a href="#" class="active">Home</a>
+                <a href="#">About Me</a>
+                <a href="#">Education & Experience</a>
+                <a href="#">Interests</a>
+            </li>
+        </div>
+    </header>
+    
+
+    <script>
+        const toggleBtn = document.querySelector('.toggle-btn');
+        const toggleBtnIcon = document.querySelector('.toggle-btn');
+        const dropDownMenu = document.querySelector('.dropdown-menu');
+
+        toggleBtn.onclick = function () {
+            dropDownMenu.classList.toggle('open');
+            const isOpen = dropDownMenu.classList.contains('open');
+
+            toggleBtnIcon.innerHTML = isOpen
+            ? '&#10006;' // X (cross) icon
+            : '&#9776;'; // Default hamburger icon
+        };
+    </script>
+    <!-- <header>
         <h2 class="logo">Logo</h2>
         <nav class="navigation">
             <a href="#" class="active">Home</a>
@@ -15,7 +53,7 @@
             <a href="#">Service</a>
             <a href="#">Contact</a>
         </nav>
-    </header>
+    </header> -->
 
     <section class="parallax">
         
@@ -27,7 +65,7 @@
         <img src="own_pics/valley2.png" id="valley2">
         
         <img src="own_pics/birds.png" id="birds">
-        <h2 id="text">Parallax</h2>
+        <h2 id="text">Hi, I'm Swathi.</h2>
         <button class="get-started-button" id="button">Get Started</button>
         <img src="own_pics/valley3.png" id="valley3">
         <img src="own_pics/valley4.png" id="valley4">
@@ -35,11 +73,11 @@
     </section>
 
     <section class="sec">
-        <h2>Parallax Scrolling website</h2>
+        <h2 class="text">About Me</h2>
         <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur aliquam ratione quisquam dolorem voluptates non neque, asperiores suscipit quasi nobis, quam inventore corrupti! Magnam harum voluptas perferendis nihil eos recusandae aut earum quidem, pariatur nulla fuga delectus natus aperiam cumque iste porro blanditiis suscipit id itaque autem maiores. Cupiditate assumenda quisquam ducimus ipsum magnam a quibusdam illum voluptatum, ut hic, explicabo qui reiciendis nobis sint adipisci vel doloremque nulla incidunt, blanditiis eos amet aliquid reprehenderit. Nostrum, ducimus. Assumenda est quasi vel molestiae obcaecati, exercitationem excepturi debitis quaerat quos iure laborum cumque atque cum in tenetur quo voluptatibus cupiditate eum eaque! Ratione aut laudantium earum modi ex dolor unde recusandae similique, blanditiis veritatis sequi ad beatae ipsam ducimus sit eligendi placeat nobis, tenetur impedit, possimus porro quis deleniti culpa. Possimus, ullam. <br><br>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur aliquam ratione quisquam dolorem voluptates non neque, asperiores suscipit quasi nobis, quam inventore corrupti! Magnam harum voluptas perferendis nihil eos recusandae aut earum quidem, pariatur nulla fuga delectus natus aperiam cumque iste porro blanditiis suscipit id itaque autem maiores. Cupiditate assumenda quisquam ducimus ipsum magnam a quibusdam illum voluptatum, ut hic, explicabo qui reiciendis nobis sint adipisci vel doloremque nulla incidunt, blanditiis eos amet aliquid reprehenderit. Nostrum, ducimus. Assumenda est quasi vel molestiae obcaecati, exercitationem excepturi debitis quaerat quos iure laborum cumque atque cum in tenetur quo voluptatibus cupiditate eum eaque! Ratione aut laudantium earum modi ex dolor unde recusandae similique, blanditiis veritatis sequi ad beatae ipsam ducimus sit eligendi placeat nobis, tenetur impedit, possimus porro quis deleniti culpa. Possimus, ullam. <br><br>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur aliquam ratione quisquam dolorem voluptates non neque, asperiores suscipit quasi nobis, quam inventore corrupti! Magnam harum voluptas perferendis nihil eos recusandae aut earum quidem, pariatur nulla fuga delectus natus aperiam cumque iste porro blanditiis suscipit id itaque autem maiores. Cupiditate assumenda quisquam ducimus ipsum magnam a quibusdam illum voluptatum, ut hic, explicabo qui reiciendis nobis sint adipisci vel doloremque nulla incidunt, blanditiis eos amet aliquid reprehenderit. Nostrum, ducimus. Assumenda est quasi vel molestiae obcaecati, exercitationem excepturi debitis quaerat quos iure laborum cumque atque cum in tenetur quo voluptatibus cupiditate eum eaque! Ratione aut laudantium earum modi ex dolor unde recusandae similique, blanditiis veritatis sequi ad beatae ipsam ducimus sit eligendi placeat nobis, tenetur impedit, possimus porro quis deleniti culpa. Possimus, ullam. <br><br>
+            
         </p>
     </section>
     <script src="script.js"></script>
