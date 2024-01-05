@@ -70,11 +70,11 @@ header {
 
 #text {
     position: absolute;
-    font-size: 10em;
+    font-size: 6em;
     justify-content: center;
     color: #241C1C;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
-    margin-bottom: 400px;
+    margin-bottom: 800px;
 }
 
 .get-started-button {
@@ -88,14 +88,10 @@ header {
     padding: 15px 30px; /* Adjusted padding for increased size */
     border: none;
     border-radius: 20px;
-    font-weight: 600;
-    font-size: 1.2em; /* Adjusted font size for increased size */
     cursor: pointer;
     transition: background-color 0.3s ease;
 }
-.get-started-button:hover {
-    background-color: #634e4e;
-}
+
 
 .parallax img {
     position: absolute;
@@ -285,7 +281,7 @@ header {
     font-weight: 600;
     transition: all 300ms ease;
     padding: 1rem;
-    width: 8rem;
+    width: fit-content;
     border-radius: 2rem;
   }
 
