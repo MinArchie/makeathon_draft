@@ -309,6 +309,25 @@ header {
 }
 
 
+.color-container {
+    filter: grayscale(100%); /* Initially set to 100% */
+    transition: filter 0.3s ease; /* Add transition for smooth effect */
+}
+
+.color-container:hover {
+    background-color: grey;
+    transform: scale(1.1);
+    transition: transform 0.4s ease;
+}
+
+.color-container.highlight {
+    filter: grayscale(0%);
+}
+
+.highlight {
+    background-color: grey;
+}
+
 /* Media Query for smaller screens */
 @media screen and (max-width: 600px) {
     header {

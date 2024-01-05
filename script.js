@@ -48,3 +48,38 @@ window.addEventListener('scroll', updateParallax);
 
 // Initial update
 updateParallax();
+
+
+
+
+document.addEventListener('DOMContentLoaded', function () {
+    // Function to highlight the hovered box and reset others
+    function highlightBox(box) {
+        var colorContainers = document.querySelectorAll('.color-container');
+        colorContainers.forEach(function (otherBox) {
+            otherBox.classList.remove("highlight");
+        });
+
+        box.classList.add("highlight");
+    }
+
+    // Function to reset all boxes
+    function resetBoxes() {
+        var colorContainers = document.querySelectorAll('.color-container');
+        colorContainers.forEach(function (box) {
+            box.classList.remove("highlight");
+        });
+    }
+
+    // Attach event listeners to each color-container
+    var colorContainers = document.querySelectorAll('.color-container');
+    colorContainers.forEach(function (box) {
+        box.addEventListener('mouseenter', function () {
+            highlightBox(box);
+        });
+
+        box.addEventListener('mouseleave', function () {
+            resetBoxes();
+        });
+    });
+});
