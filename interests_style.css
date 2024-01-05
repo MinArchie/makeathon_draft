@@ -41,6 +41,17 @@ body{
     margin-bottom: 30px;
 }
 
+#text1 {
+    position: absolute;
+    font-size: 4em;
+    top: -340px;
+    left: 30px;
+    color: #241C1C;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    margin-top: 30vh;
+    margin-right: 0;
+}
+
 a {
     text-decoration: none;
 }
@@ -66,6 +77,8 @@ header {
     margin-right: 50px;
 }
 
+
+
 .navigation {
     width: 100%;
     height: 30px;
@@ -87,7 +100,7 @@ header {
 .navigation a:hover, 
 .navigation a.active {
     background: #916F6F;
-    color: white;
+    color: black;
 }
 
 .toggle-btn {
@@ -107,7 +120,7 @@ header {
 
 .dropdown-menu.open a {
     text-decoration: none;
-    color:  #fff;
+    color:  black;
     padding: 6px 15px;
     border-radius: 20px;
     margin: 0 20px;
@@ -117,7 +130,7 @@ header {
 .dropdown-menu.open a:hover, 
 .dropdown-menu.open a.active {
     background: #916F6F;
-    color: white;
+    color: black;
 }
 
 .dropdown-menu li {
@@ -162,7 +175,7 @@ header {
 
 .dropdown-menu.open a {
     text-decoration: none;
-    color: #fff;
+    color: black;
     display: block;
     padding: 10px 20px;
     font-weight: 600;
@@ -171,7 +184,7 @@ header {
 
 .dropdown-menu.open a:hover, .dropdown-menu.open a.active {
     background: #916F6F;
-    color: white;
+    color: black;
 }
 
 
@@ -188,6 +201,12 @@ header {
 
     .logo {
         margin-right: 20px;
+    }
+
+    
+    .logo img {
+        width: 50px; /* Adjust the width as needed */
+        height: 50px;
     }
 
     .navigation {
@@ -212,7 +231,7 @@ header {
 
     #text1 {
         position: absolute;
-        font-size: 8em;
+        font-size: 3em;
         top: -340px;
         left: -75px;
         color: #241C1C;
@@ -279,12 +298,16 @@ header {
         left: 0;
     }
 
-    #text {
+
+    #text1 {
         position: absolute;
-        top: 120px;
-        font-size: 9em; /* Adjusted font size */
-        margin-bottom: 600px; /* Adjusted margin for better positioning */
-        color: #241C1C; /* Ensured text is visible against the dark background */
+        font-size: 3em;
+        top: -290px;
+        left: -75px;
+        color: #241C1C;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+        margin-top: 30vh;
+        margin-right: 0;
     }
 
     .get-started-button {

@@ -28,6 +28,8 @@ header {
     justify-content: flex-start;
     align-items: center;
     z-index: 100;
+    margin-bottom: 120px;
+    background-color: #E3DEDB;
 }
 
 .logo {
@@ -35,6 +37,14 @@ header {
     color: #916F6F;
     pointer-events: none;
     margin-right: 50px;
+}
+
+.logo img {
+    width: 100px; /* Adjust the width as needed */
+    height: 100px; /* Adjust the height as needed */
+    border-radius: 50%; /* Make it a circle */
+    border: 0px solid #916F6F; /* Add a border with the desired color */
+    margin-right: 10px; /* Adjust the margin as needed */
 }
 
 .navigation {
@@ -58,7 +68,7 @@ header {
 .navigation a:hover, 
 .navigation a.active {
     background: #916F6F;
-    color: white;
+    color: black;
 }
 
 .toggle-btn {
@@ -78,7 +88,7 @@ header {
 
 .dropdown-menu.open a {
     text-decoration: none;
-    color:  #fff;
+    color:  black;
     padding: 6px 15px;
     border-radius: 20px;
     margin: 0 20px;
@@ -88,7 +98,7 @@ header {
 .dropdown-menu.open a:hover, 
 .dropdown-menu.open a.active {
     background: #916F6F;
-    color: white;
+    color: black;
 }
 
 .dropdown-menu li {
@@ -133,7 +143,7 @@ header {
 
 .dropdown-menu.open a {
     text-decoration: none;
-    color: #fff;
+    color: black;
     display: block;
     padding: 10px 20px;
     font-weight: 600;
@@ -142,7 +152,7 @@ header {
 
 .dropdown-menu.open a:hover, .dropdown-menu.open a.active {
     background: #916F6F;
-    color: white;
+    color: black;
 }
 
 .container {
@@ -159,6 +169,7 @@ header {
 
 /* Section */
 .section {
+    margin-top: 50px;
     padding-block: 4rem 2rem;
 }
 
@@ -239,6 +250,7 @@ header {
 
 .button i{
     font-size: 1.25rem;
+    background-color: black;
 
 }
 
@@ -368,6 +380,12 @@ header {
 
     .logo {
         margin-right: 20px;
+    }
+
+    
+    .logo img {
+        width: 70px; /* Adjust the width as needed */
+        height: 70px;
     }
 
     .navigation {
