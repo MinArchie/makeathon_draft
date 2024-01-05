@@ -4,15 +4,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
+    <!-- CSS -->
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="transistions.css">
+
+
+
+    <!-- Icons & misc -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha384-d5uMBra0dI0eWkxyv2j/YfdCbNvH4uRlUs8VXEeNfJAjiqEeMGO9tU1bF4iS8B1" crossorigin="anonymous">
+
+    <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.4.0/remixicon.css" crossorigin="">
+
 
 </head>
 <body>
+
+    <div class="transition transition-1 is-active"></div>
     <header>
         <h2 class="logo">Logo</h2>
         <nav class="navigation">
-            <a href="#" class="active">Home</a>
+            <a href="index.html" class="active">Home</a>
             <a href="about.html">About Me</a>
             <a href="education.html">Education & Experience</a>
             <a href="interests.html">Interests</a>
@@ -22,10 +36,10 @@
 
         <div class="dropdown-menu">
             <li>
-                <a href="#" class="active">Home</a>
-                <a href="#">About Me</a>
-                <a href="#">Education & Experience</a>
-                <a href="#">Interests</a>
+                <a href="index.html" class="active">Home</a>
+                <a href="about.html">About Me</a>
+                <a href="education.html">Education & Experience</a>
+                <a href="interests.html">Interests</a>
             </li>
         </div>
     </header>
@@ -45,15 +59,7 @@
             : '&#9776;'; // Default hamburger icon
         };
     </script>
-    <!-- <header>
-        <h2 class="logo">Logo</h2>
-        <nav class="navigation">
-            <a href="#" class="active">Home</a>
-            <a href="#">About</a>
-            <a href="#">Service</a>
-            <a href="#">Contact</a>
-        </nav>
-    </header> -->
+
 
     <section class="parallax">
         
@@ -65,7 +71,7 @@
         <img src="own_pics/valley2.png" id="valley2">
         
         <img src="own_pics/birds.png" id="birds">
-        <h2 id="text">Hi, I'm Swathi.</h2>
+        <h1 id="text">Hi, I'm Swathi.</h1>
         <button class="get-started-button" id="button">Get Started</button>
         <img src="own_pics/valley3.png" id="valley3">
         <img src="own_pics/valley4.png" id="valley4">
@@ -73,13 +79,45 @@
     </section>
 
     <section class="sec">
-        <h2 class="text">About Me</h2>
-        <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur aliquam ratione quisquam dolorem voluptates non neque, asperiores suscipit quasi nobis, quam inventore corrupti! Magnam harum voluptas perferendis nihil eos recusandae aut earum quidem, pariatur nulla fuga delectus natus aperiam cumque iste porro blanditiis suscipit id itaque autem maiores. Cupiditate assumenda quisquam ducimus ipsum magnam a quibusdam illum voluptatum, ut hic, explicabo qui reiciendis nobis sint adipisci vel doloremque nulla incidunt, blanditiis eos amet aliquid reprehenderit. Nostrum, ducimus. Assumenda est quasi vel molestiae obcaecati, exercitationem excepturi debitis quaerat quos iure laborum cumque atque cum in tenetur quo voluptatibus cupiditate eum eaque! Ratione aut laudantium earum modi ex dolor unde recusandae similique, blanditiis veritatis sequi ad beatae ipsam ducimus sit eligendi placeat nobis, tenetur impedit, possimus porro quis deleniti culpa. Possimus, ullam. <br><br>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur aliquam ratione quisquam dolorem voluptates non neque, asperiores suscipit quasi nobis, quam inventore corrupti! Magnam harum voluptas perferendis nihil eos recusandae aut earum quidem, pariatur nulla fuga delectus natus aperiam cumque iste porro blanditiis suscipit id itaque autem maiores. Cupiditate assumenda quisquam ducimus ipsum magnam a quibusdam illum voluptatum, ut hic, explicabo qui reiciendis nobis sint adipisci vel doloremque nulla incidunt, blanditiis eos amet aliquid reprehenderit. Nostrum, ducimus. Assumenda est quasi vel molestiae obcaecati, exercitationem excepturi debitis quaerat quos iure laborum cumque atque cum in tenetur quo voluptatibus cupiditate eum eaque! Ratione aut laudantium earum modi ex dolor unde recusandae similique, blanditiis veritatis sequi ad beatae ipsam ducimus sit eligendi placeat nobis, tenetur impedit, possimus porro quis deleniti culpa. Possimus, ullam. <br><br>
-            
-        </p>
+        <br><br><br>
+        <h1 class="title">Get to Know Me</h1>
+        <div class="main-details-container">
+            <div class="about-containers">
+              <div class="details-container color-container">
+                <div class="article-container">
+                  <img src="own_pics/placeholder.jpg" alt="About Me" class="details-img">
+                </div>
+                <h2 class="details-subtitle details-title" style="color: black;">About Me</h2>
+                <div class="btn-container">
+                    <button class="btn btn-color-2 details-btn" onclick="location.href='about.html'">About Me</button>
+                </div>
+              </div>
+              <div class="details-container color-container">
+                <div class="article-container">
+                    <img src="own_pics/placeholder.jpg" alt="Education" class="details-img"> 
+                </div>
+                
+                <h2 class="details-subtitle details-title" style="color: black;">Education</h2>
+                <div class="btn-container">
+                  <button class="btn btn-color-2 details-btn" onclick="location.href='education.html'"> 
+                    Education & Experience
+                  </button>
+                </div>
+              </div>
+              <div class="details-container color-container">
+                <div class="article-container">
+                  <img src="own_pics/placeholder.jpg" alt="Interests" class="details-img">
+                </div>
+                <h2 class="details-subtitle details-title" style="color: black;">Interests</h2>
+                <div class="btn-container">
+                    <button class="btn btn-color-2 details-btn" onclick="location.href='interests.html'">Interests</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
     </section>
     <script src="script.js"></script>
+    <script src="transistions_main.js"></script>
 </body>
 </html>

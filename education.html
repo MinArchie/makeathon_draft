@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="transistions.css">
+</head>
+<body>
+    <div class="transition transition-3 is-active"></div>
+
+    <header>
+        <h2 class="logo">Logo</h2>
+        <nav class="navigation">
+            <a href="index.html">Home</a>
+            <a href="about.html">About Me</a>
+            <a href="education.html" class="active">Education & Experience</a>
+            <a href="interests.html">Interests</a>
+        </nav>
+
+        <div class="toggle-btn">&#9776;</div>
+
+        <div class="dropdown-menu">
+            <li>
+                <a href="index.html">Home</a>
+                <a href="about.html">About Me</a>
+                <a href="education.html" class="active">Education & Experience</a>
+                <a href="interests.html">Interests</a>
+            </li>
+        </div>
+    </header>
+
+    <script>
+        const toggleBtn = document.querySelector('.toggle-btn');
+        const toggleBtnIcon = document.querySelector('.toggle-btn');
+        const dropDownMenu = document.querySelector('.dropdown-menu');
+
+        toggleBtn.onclick = function () {
+            dropDownMenu.classList.toggle('open');
+            const isOpen = dropDownMenu.classList.contains('open');
+
+            toggleBtnIcon.innerHTML = isOpen
+            ? '&#10006;' // X (cross) icon
+            : '&#9776;'; // Default hamburger icon
+        };
+    </script>
+
+    <script src="script.js"></script>
+    <script src="transistions_main.js"></script>
+</body>
+</html>
