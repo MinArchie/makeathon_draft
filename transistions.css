@@ -60,3 +60,19 @@
 .transition-4.is-active {
     right: 0px;
 }
+
+.transition-5 {
+    position: fixed;
+    bottom: 100%;
+    left: 0;
+    right: 0;
+    width: 100%;
+    z-index: 101;
+    background-color: #241C1C;
+    transition: 1s ease-out;
+}
+
+.transition-5.is-active {
+    bottom: 0px;
+}
+
